@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b4f2af068bd3e5fc65ff480ea963e87",
+    "content-hash": "48134d7c42b3144060ff41f7d31ba846",
     "packages": [
         {
             "name": "bjyoungblood/BjyProfiler",
@@ -194,6 +194,49 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30T15:22:37+00:00"
+        },
+        {
+            "name": "darkmatus/roleuserbridge",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darkmatus/roleuserbridge.git",
+                "reference": "1f249551b704bd302011187ffb13697321829152"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darkmatus/roleuserbridge/zipball/1f249551b704bd302011187ffb13697321829152",
+                "reference": "1f249551b704bd302011187ffb13697321829152",
+                "shasum": ""
+            },
+            "require-dev": {
+                "bjyoungblood/bjy-authorize": "1.*",
+                "zendframework/zendframework": "2.*",
+                "zf-commons/zfc-user": "0.*||1.*||2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "RoleUserBridge": "src/"
+                },
+                "classmap": [
+                    "./"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Darkmatus",
+                    "email": "mueller@s-p-it.de",
+                    "homepage": "https://github.com/darkmatus/"
+                }
+            ],
+            "description": "ZfcUser/BjyAuthorize Bridge for auto-adding User to the user_role_table from BjyAuthorize. including fix bc break",
+            "homepage": "https://github.com/darkmatus/roleuserbridge",
+            "keywords": [
+                "zf2"
+            ],
+            "time": "2016-07-15 10:46:58"
         },
         {
             "name": "doctrine/annotations",
@@ -5868,7 +5911,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "zendframework/zend-developer-tools": 20,
-        "doctrine/doctrine-module": 20
+        "doctrine/doctrine-module": 20,
+        "darkmatus/roleuserbridge": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

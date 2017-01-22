@@ -8,15 +8,20 @@
 return array(
     // This should be an array of module namespaces used in the application.
     'modules' => array(
-		//'BjyProfiler',
-		//'DoctrineModule',
+        //'DoctrineModule',
        // 'DoctrineORMModule',
+        //'RoleUserBridge',
         'ZfcBase',
         'ZfcUser',
         //'ZfcUserDoctrineORM',
-       'BjyAuthorize',
-		 'Application',
+        'BjyAuthorize',
+        //'RoleUserBridge',
+        'Application',
 		'ZendDeveloperTools',
+		//'Admin',
+		//'Form',
+
+
 		
     ),
 
