@@ -18,6 +18,7 @@
         "zf-commons/zfc-user-doctrine-orm": "^1.0",
         "bjyoungblood/BjyProfiler": "^1.1",
         "bjyoungblood/bjy-profiler": "^1.1",
-        "Darkmatus/RoleUserBridge": "dev-master"
+        "Darkmatus/RoleUserBridge": "dev-master",
+        "zf-commons/zfc-twig": "dev-master"
     }
 }
