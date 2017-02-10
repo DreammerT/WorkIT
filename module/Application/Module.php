@@ -11,6 +11,9 @@ namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Application\Model\ModelTable;
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\TableGateway\TableGateway;
 
 class Module
 {
@@ -33,6 +36,23 @@ class Module
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
                 ),
+            ),
+        );
+    }
+
+    public function getServiceConfig()
+    {
+        return array(
+            'factories'=>array(
+                'Application\Model\ModelTable'=>function ($i){
+                    $adapter = $i->get('configTable');
+                    return new ModelTable($adapter);
+                },
+                'configTable'=>function ($tableConfig){
+                    $adapter = $tableConfig->get('Zend\Db\Adapter\Adapter');
+                    $rs = new ResultSet();
+                    return new TableGateway("user", $adapter,null,$rs);
+                }
             ),
         );
     }
