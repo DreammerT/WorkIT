@@ -1,6 +1,6 @@
 <?php
 $dbParams = array(
-		'database'  => 'users',
+		'database'  => 'Phone',
 		'username'  => 'root',
 		'password'  => '',
 		'hostname'  => 'localhost',

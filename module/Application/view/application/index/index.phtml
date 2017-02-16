@@ -1,1 +1,23 @@
-<p>Start Page!</p>
+<pre class="prettyprint linenums">
+    <table class="table">
+              <thead>
+                <tr>
+
+                  <th>ID</th>
+                  <th>Title for question</th>
+                  <th>Date</th>
+                  <th>tuturail ro Videos</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <?php foreach ($this->listing as $k => $v){?>
+                      <tr class="success">
+                        <td><?php echo $v['list_id'];?></td>
+                        <td><a class="" href=""><?php echo $v['list_title'];?></a></td>
+                        <td><?php echo $v['list_date'];?></td>
+                        <td><a class="" href="">Link</a></td>
+                    </tr>
+                  <?php }?>
+              </tbody>
+        </table>
+</pre>
